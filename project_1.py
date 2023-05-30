@@ -1,11 +1,10 @@
 import streamlit as st
 import streamlit.components.v1 as components
 import pandas as pd
-from sklearn.cross_validation import train_test_split
 import numpy as np
+from sklearn.model_selection import train_test_split
 #housing=pd.read_csv("housing 1.csv",encoding = "ISO-8859-1",on_bad_lines='skip',lineterminator='\n')
 housing=pd.read_csv("housing 1.csv")
-from sklearn.model_selection import train_test_split
 train_set,test_set=train_test_split(housing,test_size=0.2,random_state=42)
 #print(f"rows in train set:{len(train_set)}\nrows in test set:{len(test_set)}\n")
 from sklearn.model_selection import StratifiedShuffleSplit
