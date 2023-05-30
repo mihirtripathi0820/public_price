@@ -84,5 +84,6 @@ y=int(model.predict(features)*80*1000)
 
 st.write("PROPERTY VALUE")
 st.write(y)
+st.write(created by Mihir Tripathi)
 
 
